@@ -10,11 +10,10 @@ This section is "work-in-progress"
    * The originally published name is stored in the `name` table
    * All homotypic synonyms point to the originally published name using `origin_name_id`
    * The status of each homotypic synonyms is set accordingly (e.g. Orthographic variant)
-   
  * Heterotypic synonyms ([definition](https://github.com/DINA-Web/dina-use-cases/blob/master/glossary.md#heterotypic-synonym))
-   * The taxon points to the "accepted" name
+   * The taxon points to the "accepted" name
    * All heterotypic synonyms are recorded in the `synonym` table
-   * New combination
+   * New combination
      * `origin` is set "basionym" ?
    * New split
      * Lets A[id=1] be the originally published name that is now splitted into A[id=2] and B[id=3]
