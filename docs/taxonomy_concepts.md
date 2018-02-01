@@ -17,5 +17,10 @@ This section is "work-in-progress"
    * New combination
      * `origin` is set "basionym" ?
    * New split
-     * `origin` is set "pro parte" ?
+     * Lets A[id=1] be the originally published name that is now splitted into A[id=2] and B[id=3]
+     * A[id=1] remains in the `name` table
+     * The new names, A[id=2] and B[id=3], are added to the `name` table and their `origin` is set "pro parte" 
+     * The `basionym_name_id` is set on A[id=2]
+     * 2 taxa pointing to A[id=2] and B[id=3] are created in the `taxon` table
+     * 2 synonyms are created in the `synonym` table where the 2 previously created taxa point to the previous name A[id=1]
   
