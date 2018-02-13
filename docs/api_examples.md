@@ -1,6 +1,6 @@
 # Notes on other taxonomy APIs
 
-# Links to external taxonomy APIs 
+# Links to external taxonomy APIs
 * [GBIF](https://www.gbif.org/developer/species)
 * [Catalogue of Life](http://www.catalogueoflife.org/content/web-services)
 * Global Names [resolver](http://resolver.globalnames.org/api) and [index](https://github.com/dimus/gni/wiki/api)
