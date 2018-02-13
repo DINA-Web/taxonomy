@@ -4,23 +4,16 @@ Design document for DINA taxonomy API methods. Expanded from [Taxonomy API discu
 
 See [DINA glossary](https://github.com/DINA-Web/dina-use-cases/blob/master/glossary.md) for terms.
 
-## Links to other taxonomy APIs 
-
-* [GBIF](https://www.gbif.org/developer/species)
-* [Catalogue of Life](http://www.catalogueoflife.org/content/web-services)
-* Global Names [resolver](http://resolver.globalnames.org/api) and [index](https://github.com/dimus/gni/wiki/api)
-* [Canadensys](http://data.canadensys.net/vascan/api) (vascan)
-* [Encyclopedia of Life](http://www.eol.org/api/) : multiple hierarchies
-* the [taxize](https://www.r-project.org/nosvn/pandoc/taxize.html) R package wraps these and other taxonomy APIs; see their list for many more links
+See [API example doc](https://github.com/DINA-Web/taxonomy/blob/master/docs/api_examples.md) for notes on non-DINA taxonomy APIs
 
 ## Assumptions
 
+* taxonomy = hierarchy = classification
 * there will be some canonical root URL for the API, format to be determined
+* the API will be versioned, and we may deprecate older versions in the future
 * taxonomic names are not guaranteed to be unique
   * therefore, cannot safely perform CRUD options based on name strings without disambiguation
-* the API will be versioned, and we may deprecate older versions in the future
-* One goal with the design is to harmonize with existing taxonomy APIs (improved interoperability with other services and new modules)
-
+* one goal is to harmonize with existing taxonomy APIs (improved interoperability with other services and future modules)
 
 ## Methods
 
@@ -35,7 +28,7 @@ See [DINA glossary](https://github.com/DINA-Web/dina-use-cases/blob/master/gloss
 
 * Will a single DINA system store more than one taxonomy?
   * if more than one, how does a API user disambiguate?
-  * disambiguation required for all methods?
+  * disambiguation required for all methods vs some methods?
 * What is the minimum metadata required to create a new taxon?
 * IDs vs names
   * REST APIs generally operate on a resource (a unique thing) and names are not unique (see Assumptions)
