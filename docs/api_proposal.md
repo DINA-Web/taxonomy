@@ -29,7 +29,7 @@ At a high level, we need methods to
 1. Get a specific  taxon
 1. Return information about the taxonomic hierarchy / relationships between taxa.
 
-Here is a proposed list of key methods:
+Here is a proposed list of key GET methods:
 
 ### /tnrs
 Method for taxonomic name reconciliation; returns potentially matching taxa (exact or fuzzy matching; uses information about synonyms)
