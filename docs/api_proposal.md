@@ -23,7 +23,7 @@ See [API example doc](https://github.com/DINA-Web/taxonomy/blob/master/docs/api_
 
 ## Methods
 
-At a high level, we need methods to
+Starting with GET methods. At a high level, we need methods to
 1. Search for taxa based on name strings (taxonomic name resolution)
 1. Search taxa based on some parameter
 1. Get a specific  taxon
@@ -129,7 +129,7 @@ Returns json with subtree, limited and / or paginated if large number of levels 
 * What is the minimum metadata required to create a new taxon?
 * IDs vs names
   * REST APIs generally operate on a resource (a unique thing) and names are not unique (see Assumptions)
-  * one workflow: user provides a name, we give back a list of potentially matching names. Each returned name has some metadata (enough for a user to decide which one they want) and an identifier. Using the identifier, they can access operations on that taxon.
+  * workflow proposed here: user provides a name, we give back a list of potentially matching names. Each returned name has some metadata (enough for a user to decide which one they want) and an identifier. Using the identifier, they can access operations on that taxon.
   * which methods only take IDs vs names?
 * assigning IDs to taxa
   * what entity does an ID apply to?
