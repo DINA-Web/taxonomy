@@ -22,12 +22,14 @@ language</panel_attributes>
       <x>630</x>
       <y>130</y>
       <w>280</w>
-      <h>160</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>name
 --
 name_id
 scientific_name
+authorship
+years
 basionym_name_id
 type: [scientific, otu, ...]
 status: [ok, illegitimate, rejected, ...]
@@ -102,12 +104,12 @@ name_id</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>560</x>
-      <y>280</y>
+      <y>300</y>
       <w>170</w>
-      <h>100</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
